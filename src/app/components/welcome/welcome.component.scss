@@ -1,0 +1,44 @@
+.welcome {
+    width: 75%;
+    height: 60%;
+    background-color: #FFFFFF7A;
+    backdrop-filter: blur(15px);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 2em;
+
+    h2 {
+        font-weight: 300;
+        letter-spacing: 1px;
+    }
+
+    span {
+        animation: swing 2s ease-in-out infinite;
+        font-size: 4em;
+    }
+}
+
+@keyframes swing {
+    20% {
+    transform: rotate3d(0,0,1,15deg);
+    }
+    40% {
+    transform: rotate3d(0,0,1,-10deg);
+    }
+    60% {
+    transform: rotate3d(0,0,1,5deg);
+    }
+    80% {
+    transform: rotate3d(0,0,1,-5deg);
+    }
+    100% {
+    transform: rotate3d(0,0,1,0);
+    }
+}

@@ -1,0 +1,11 @@
+<div class="book-details">
+    <div class="top-book-details">
+        <img [src]="bookChild.imgUrl">
+    </div>
+    <div class="bottom-book-details">
+        <span>Title : {{ bookChild.title }}</span>
+        <span>Author : {{ bookChild.author }}</span>
+        <p>{{ bookChild.resume }}</p>
+        <button (click)="onTake()" [ngClass]="bookChild.isAvailable ? 'available' : 'not-available'" class="reserv">{{ available }}</button>
+    </div>
+</div>

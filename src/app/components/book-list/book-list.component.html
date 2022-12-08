@@ -1,0 +1,15 @@
+<div class="book-list">
+    <div class="top">
+        <div class="radio">
+            <label for="all">All books</label>
+            <input checked name="avbook" (click)="onClickAll()" type="radio" id="all">
+        </div>
+        <div class="radio">
+            <label for="available">Books available</label>
+            <input name="avbook" (click)="onClickAvailable()" type="radio" id="available">
+        </div>
+    </div>
+    <div class="bottom">
+        <app-book *ngFor="let elt of book" [bookChild]="elt"></app-book>
+    </div>
+</div>

@@ -1,0 +1,10 @@
+<div class="book">
+    <div class="top-book">
+        <img [src]="bookChild.imgUrl" alt="">
+    </div>
+    <div class="bottom-book">
+        <button (click)="onShowMore()" class="show-more">Show more</button>
+        <span>Author : {{bookChild.author}}</span>
+        <button (click)="onTake()" [ngClass]="bookChild.isAvailable ? 'available' : 'not-available'" class="reserv">{{ available }}</button>
+    </div>
+</div>
